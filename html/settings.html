@@ -1,0 +1,94 @@
+<ons-page id="settingsPage">
+  <ons-toolbar>
+    <div class="left">
+      <ons-back-button>
+      </ons-back-button>
+    </div>
+    <div class="center">Settings</div>
+    <div class="toolbar__right">
+        <ons-toolbar-button component="button/about">
+            <ons-icon icon="ion-navicon, material:md-info" size="25px, material:25px"></ons-icon>
+        </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <ons-card>
+      <ons-list-title>
+          Search
+        </ons-list-title>
+  <ons-list>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-radio name="search-method" input-id="cfg-search-id" checked onchange="onSearchMethodID(this)"></ons-radio>
+      </label>
+      <label for="cfg-search-id" class="center">
+        Search by ID
+      </label>
+    </ons-list-item>
+    <ons-list-item tappable>
+      <label class="left">
+        <ons-radio name="search-method" input-id="cfg-search-code" onchange="onSearchMethodCode(this)"></ons-radio>
+      </label>
+      <label for="cfg-search-code" class="center">
+        Search by Code
+      </label>
+    </ons-list-item>
+  </ons-list>
+</ons-card>
+
+<ons-card>
+    <ons-list-title>
+      Database
+      </ons-list-title>
+
+    <div style="text-align: center; margin-top: 0px;">
+      <p>
+        <ons-input id="download-input" style="width: 90%;" modifier="underbar material" placeholder="url of the database" onclick="onDownloadURLClick(this);"></ons-input>
+      </p>
+      <p>
+        <ons-input id="database-path-input" style="width: 90%;" modifier="underbar material" placeholder="path to database root"></ons-input>
+      </p>
+
+      <ons-button onclick="onDownloadClick()" style="margin-right: 20px;">Download</ons-button>
+
+      <ons-button onclick="onCleanClick()">Clean</ons-button>
+
+    </p>
+    </div>
+</ons-card>
+
+<ons-card>
+    <ons-list-title> OPC XML-DA Server </ons-list-title>
+    <div style="text-align: center; margin-top: 0px;">
+      <p>
+        <ons-input id="opc-server-url-input" style="width: 90%;" modifier="underbar material" placeholder="server URL"></ons-input>
+      </p>
+      <ons-button onclick="onSetServerClick()">SET SERVER</ons-button>
+    </p>
+    </div>
+</ons-card>
+
+<ons-card>
+    <ons-list-item modifier="nodivider">
+        <div class="left">
+          Keep awake
+        </div>
+        <div class="right">
+          <ons-switch id="keep-awake-switch" onchange="onKeepAwakeSwitch(this)"></ons-switch>
+        </div>
+      </ons-list-item>
+</ons-card>
+
+  <ons-modal direction="up" id="modal-download">
+      <div style="text-align: center">
+        <p>
+          <ons-icon icon="md-spinner" size="28px" spin></ons-icon> 
+        </p>
+        <p>
+          <!-- Downloading... -->
+        </p>
+      </div>
+  </ons-modal>
+
+</ons-page>
+

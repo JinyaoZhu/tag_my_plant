@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tag My Plant</title>
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; media-src *; connect-src *" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/onsen/js/onsenui.js"></script>
+    <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ons-navigator id="myNavigator" page="splitter.html"> </ons-navigator>
+
+    <template id="splitter.html">
+        <ons-page>
+            <ons-splitter id="mySplitter">
+                <ons-splitter-side page="html/menu.html" swipeable width="250px" collapse swipe-target-width="50px">
+                </ons-splitter-side>
+                <ons-splitter-content page="tabbar.html">
+                </ons-splitter-content>
+            </ons-splitter>
+        </ons-page>
+    </template>
+
+    <template id="tabbar.html">
+        <ons-page id="tabbarPage">
+            <ons-toolbar>
+                <div class="toolbar__left">
+                    <ons-toolbar-button component="button/search">
+                        <ons-icon icon="ion-navicon, material:md-search" size="25px, material:25px"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center toolbar__center" style="text-align: center">Tag My Plant
+                </div>
+                
+                <div class="toolbar__right">
+                        <ons-toolbar-button component="button/help">
+                            <ons-icon icon="ion-navicon, material:md-help" size="25px, material:25px"></ons-icon>
+                        </ons-toolbar-button>
+                    <ons-toolbar-button component="button/settings">
+                        <ons-icon icon="ion-navicon, material:md-settings" size="25px, material:25px"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+            </ons-toolbar>
+
+            <ons-tabbar id="myTabbar" position="bottom">
+                <ons-tab page="html/main.html" label="Component" active>
+                    <i class="tabbar__icon ion-information-circled"></i>
+                    <div class="tabbar__label tabbar--material__label">Component</div>
+                </ons-tab>
+                <ons-tab page="html/datasheet.html" label="Datasheet">
+                    <i class="tabbar__icon ion-android-document"></i>
+                    <div class="tabbar__label tabbar--material__label">Datasheet</div>
+                </ons-tab>
+            </ons-tabbar>
+        </ons-page>
+    </template>
+</body>
+
+</html>

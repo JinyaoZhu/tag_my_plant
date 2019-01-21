@@ -1,1 +1,2 @@
-# tag_my_plant
+# barcode_scanner
+Barcode scanner web application.

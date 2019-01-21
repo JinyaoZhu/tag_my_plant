@@ -1,0 +1,80 @@
+<ons-page id="mainPage">
+  <!-- <ons-list id="pending-list">
+  </ons-list> -->
+  <ons-card>
+    <ons-list-item modifier="nodivider">
+      <div class="left" id="component-title-name" style="font-size:100%;">
+      </div>
+
+      <div class="right" id="component-title-no" style="font-size:100%;">
+      </div>
+    </ons-list-item>
+
+    <div style="text-align: center">
+      <img id="component-image" alt="Component Image" style="height: 100px; margin-top: 10px;" onclick="showImgDialog(this)">
+      </img>
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">Status  
+        <img id="opc-status-image" alt="opc_status" style="height: 12px;"/>
+      </div>
+    <div class="content" id="component-status">
+      none.
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">Design</div>
+    <div class="content" id="component-design">
+      none.
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">Function</div>
+    <div class="content" id="component-function">
+      <p>
+        none.
+      </p>
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">Note</div>
+    <div class="content" id="component-note">
+      none.
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">Code</div>
+    <div class="content" id="component-code">
+      none.
+    </div>
+  </ons-card>
+  <!-- 
+  <ons-card>
+    <div class="content" id="debug-info1">
+    </div>
+    <div class="content" id="debug-info2">
+    </div>
+    <div class="content" id="debug-info3">
+    </div>
+  </ons-card> -->
+
+  <template id="alert-dialog.html">
+    <ons-alert-dialog id="component-img-dialog">
+      <div style="text-align: center; padding: 0px;">
+        <p>
+          <img id="dialog-img" style="width: 250px;" />
+        </p>
+        <p>
+          <ons-button onclick="hideImgDialog('component-img-dialog')">Close</ons-button>
+        </p>
+      </div>
+    </ons-alert-dialog>
+  </template>
+
+</ons-page>

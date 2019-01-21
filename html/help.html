@@ -1,0 +1,90 @@
+<ons-page id="helpPage">
+  <ons-toolbar>
+    <div class="left">
+      <ons-back-button></ons-back-button>
+    </div>
+    <div class="center">Help</div>
+  </ons-toolbar>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">1.Download/Update your database</div>
+    <div class="content">
+      <p style="text-indent: 0em;">
+        Open "settings"<ons-icon icon="ion-navicon, material:md-settings" size="1em"></ons-icon>
+        view, under "Database update" input URL of your database.
+      </p>
+      <p style="text-indent: 0em;">
+        Input the relative path to root folder of the database which contains the components.xml.
+      </p>
+      <p style="text-indent: 0em;">
+        Example:<br>
+        Assuming your zip file is database.zip and is located at "http://url/of/your/database.zip",
+        it includes folder "data" which includes "components.xml".
+      </p>
+      <div style="text-align: center">
+        <img id="help_database_path_img" height="100px" />
+      </div>
+      <p>
+        Now, the URL of your database is: <u>http://url/of/your/database.zip</u><br>
+        the relative path to root folder of the database is: <u>data/</u>.
+      </p>
+      <p style="text-indent: 0em;">
+        Click "DOWNLOAD" after you input the correct address. The app will always remember your inputs,
+        so that you don't need to re-enter the address once your want to update your database from the
+        same source.
+      </p>
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">2.Searching components</div>
+    <div class="content">
+      <p style="text-indent: 0em;">
+        With Barcode-scanner: Connect your barcode-scanner(eg: KDC300 from KOAMTAC) via bluetooth with your smart
+        phone, make
+        sure the barcode-scanner is working in HID mode. Scan the barcode, the app will automatically updates the
+        component information and the corresponding datasheet.
+      </p>
+      <p style="text-indent: 0em;">
+        Manual search: Your can choose search method in "settings"<ons-icon icon="ion-navicon, material:md-settings" size="1em"></ons-icon> view, 
+        after the search method is changed the app will sort the component list automatically: in ID mode the list
+        will be sorted by A-Z, while in Code model by 0-9. Click <ons-icon icon="md-search" size="1em"></ons-icon>
+        to enter manaul search view, enter the ID or Code of the component and click on the item your want to
+        see, the component information will be updated.
+      </p>
+      <p>
+        In "COMPONENT"<ons-icon icon="md-info" size="1em"></ons-icon> view brief infomation of
+        the component will be shown. You can also tap the picture to get a zoom-in view of the component.
+      </p>
+    </div>
+  </ons-card>
+
+  <ons-card>
+    <div class="title" style="font-size:100%;">3.Format of the components.xml file</div>
+    <div class="content">
+      <p>
+      The XML file must be located in the root of the database as in Section 1 mentioned.
+       The content of this XML file should be defined as below:
+      </p>
+      <div style="text-align: center">
+          <img id="help_xml_img" height="200px" />
+      </div>
+    </div>
+  </ons-card>
+
+  <ons-card>
+      <div class="title" style="font-size:100%;">4.OPC XML-DA Server</div>
+      <div class="content">
+        <p>
+            Open "settings"<ons-icon icon="ion-navicon, material:md-settings" size="1em"></ons-icon>
+            view, under "OPC XML-DA Server" input URL of the server. And then press "SET SERVER", after
+            setting the server address, it is better to restart the app. The connect status will be display
+            behind the "Status" tag in "COMPONENT"<ons-icon icon="md-info" size="1em"></ons-icon> view with 
+            a small indicator. When the indicator blinking between <span style="color: #00ff40">GREEN</span> and <span style="color: #979797">GREY</span>, 
+            that means the connection work fine.
+            Otherwise if the indicator turns <span style="color: #ff0000">RED</span>, that means the connection to the server is broken.
+        </p>
+      </div>
+    </ons-card>
+
+</ons-page>
