@@ -49,6 +49,7 @@ function onDeviceReady() {
   }
 }
 
+// initialization of all pages
 document.addEventListener('init', function (event) {
   var page = event.target;
 
@@ -100,8 +101,9 @@ document.addEventListener('init', function (event) {
 
       element.show && element.show(); // Fix ons-fab in Safari.
     });
-
+    // load setting from the local storage
     loadSetting();
+    // update the global variables
     if (g_search_method == SearchMethod.BY_ID) {
       document.querySelector('#cfg-search-id').checked = true;
       document.querySelector('#cfg-search-code').checked = false;
@@ -141,6 +143,7 @@ document.addEventListener('hide', function (event) {
   }
 });
 
+// init the component list create items and sort it
 function initComponentList() {
   loadSetting();
   g_component_search_list = document.querySelector('#component-list');
@@ -156,6 +159,7 @@ function initComponentList() {
   }
 }
 
+// remove all child of an element
 function removeAllChild(id) {
   var node = document.getElementById(id);
   while (node.firstChild) {
@@ -163,6 +167,7 @@ function removeAllChild(id) {
   }
 }
 
+// sort a list by id/code
 function sortList(search_method, list) {
   if (search_method === SearchMethod.BY_ID) {
     sortListById(list, "#no");
@@ -173,6 +178,7 @@ function sortList(search_method, list) {
   setSearchPlaceholder(search_method, 'search-input-bar');
 }
 
+// set display text in search bar
 function setSearchPlaceholder(search_method, id) {
   if (search_method === SearchMethod.BY_ID)
     document.getElementById(id).setAttribute("placeholder", 'Enter ID');
@@ -185,6 +191,7 @@ document.addEventListener('show', function (event) {
 
 });
 
+// set path of the pdf file to display
 var setPdfPath = function (path) {
   var pdfjs_path = "lib/pdfjs/web/viewer.html";
   var pdf_path = path;
@@ -194,6 +201,7 @@ var setPdfPath = function (path) {
   // ons.notification.alert('Alert');
 };
 
+// get component.xml
 function getXmlFile(xml_path) {
   if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
@@ -206,6 +214,7 @@ function getXmlFile(xml_path) {
   return xmlhttp.responseXML;
 }
 
+// generate a list from the xml file
 function createList(list, xml_file) {
   var x = xml_file.getElementsByTagName("COMPONENT");
   for (i = 0; i < x.length; i++) {
@@ -225,6 +234,7 @@ function createList(list, xml_file) {
   }
 }
 
+
 function toggleSearchBar() {
   document.querySelector('#mySplitter').left.toggle();
 }
@@ -241,6 +251,7 @@ function onItemClick(element) {
 
 }
 
+// swap two elements
 function swapElements(obj1, obj2) {
   obj2.nextSibling === obj1
     ? obj1.parentNode.insertBefore(obj2, obj1.nextSibling)
@@ -293,6 +304,7 @@ function setComponentImage(path) {
   // img.style.height = "100px;";
 }
 
+// global call back function for recording the scanner input
 function scannerInput() {
   document.onkeyup = function (e) {
     if (document.activeElement == document.getElementById("search-input"))
@@ -308,6 +320,7 @@ function scannerInput() {
   };
 }
 
+// find index of the component in the xml file given its code
 function findCompIndex(code, xmlDoc) {
   var index;
   var match_cout = 0;
@@ -330,6 +343,7 @@ function findCompIndex(code, xmlDoc) {
   }
 }
 
+// update the informations in main page and the pdf viewer
 function updateCompData(code, xmlDoc) {
   // alert(tableRow.cells[0].innerHTML);
   // document.getElementById("compImg").src = './data/KVA-datasheets/B1/basin_B1_pic.PNG';
@@ -372,6 +386,7 @@ function updateCompData(code, xmlDoc) {
   document.querySelector("#datasheetPage").scrollTop = 0;
 }
 
+// show massage when no matching found
 function noMatchUpdate() {
   document.getElementById("component-title-name").innerHTML = "Component not found!";
   document.getElementById("component-title-no").innerHTML = "";
@@ -384,6 +399,7 @@ function noMatchUpdate() {
   document.getElementById("component-status").innerHTML = "none.";
 }
 
+// show the welcome image and clear all infos
 function showWelcome() {
   document.getElementById("component-title-name").innerHTML = "";
   document.getElementById("component-title-no").innerHTML = "";
@@ -395,6 +411,7 @@ function showWelcome() {
   document.getElementById("component-code").innerHTML = "none.";
 }
 
+// show the zoom-in photo
 var showImgDialog = function (el) {
   if (el.src === "" || el.src.indexOf(g_app_root) == 0)
     return;
@@ -414,13 +431,14 @@ var showImgDialog = function (el) {
   }
 };
 
+// hide the zoom-in photo
 var hideImgDialog = function (id) {
   document
     .getElementById(id)
     .hide();
 };
 
-
+// dynamic update the displayed component list when user input
 function matchSearch(input, list, search_method) {
   var tmp_list = list.querySelectorAll('ons-list-item');
   if (input.length == 0) {
@@ -448,22 +466,24 @@ function matchSearch(input, list, search_method) {
   }
 }
 
+// call back function for search button
 function onSearchClick() {
   document.querySelector('#search-input').focus();
   document.querySelector('#search-input').value = "";
   matchSearch("", g_component_search_list, g_search_method);
 }
 
+// call back function in settings page
 function onSearchMethodID(el) {
   g_search_method = SearchMethod.BY_ID;
   el.checked = true;
 }
-
+// call back function in settings page
 function onSearchMethodCode(el) {
   g_search_method = SearchMethod.BY_CODE;
   el.checked = true;
 }
-
+// save all settings to the local storage
 function saveSetting() {
   localStorage.setItem("config_search_method", g_search_method);
   localStorage.setItem("config_path_to_database_root", g_path_to_database_root);
@@ -475,6 +495,7 @@ function saveSetting() {
   // ons.notification.toast('Settings saved.', { timeout: 300, animation: 'fall' });
 }
 
+// loal all settings from local storage
 function loadSetting() {
   if (localStorage.getItem("config_search_method"))
     g_search_method = localStorage.getItem("config_search_method");
@@ -512,7 +533,7 @@ function loadSetting() {
     g_opc_da_server_url = '';
 }
 
-
+// call back function for download button in settings page
 function onDownloadClick() {
   ons.notification.confirm("Download and update Database?").then((index) => {
     if (index == 1) {
@@ -524,9 +545,13 @@ function onDownloadClick() {
       setModalText("#modal-download", "Downloading...");
       g_database_root = cordova.file.externalDataDirectory + 'database/' + g_path_to_database_root;
       g_data_xml_path = g_database_root + "components.xml";
+      // saving the url and the relative path
       saveSetting();
+      // show modal
       showDownloadModal();
+      // clear the main page
       showWelcome();
+      // download the zip file
       downloadZipFile(g_zip_download_path, url);
     }
   });
@@ -537,7 +562,7 @@ function onDownloadURLClick(el) {
   //   el.value = "https://github.com/JinyaoZhu/KVA-Database/archive/master.zip";
 }
 
-
+// download the zip file and unzip it
 function downloadZipFile(file_dir, zip_url) {
   window.resolveLocalFileSystemURL(file_dir, function (dirEntry) {
     console.log('file system open: ' + dirEntry.name);
@@ -620,6 +645,7 @@ function onUnzipError() {
   ons.notification.alert("Decompress error.");
 }
 
+// unzip
 function processZip(zipSource, destination) {
   // Handle the progress event
   var progressHandler = function (progressEvent) {
@@ -643,6 +669,7 @@ function processZip(zipSource, destination) {
   }, progressHandler);
 }
 
+// delete a folder
 function deleteFolder(file_dir) {
    window.resolveLocalFileSystemURL(file_dir, function (dirEntry) {
     console.log('file system open: ' + dirEntry.name);
@@ -652,6 +679,7 @@ function deleteFolder(file_dir) {
   }, function(){});
 }
 
+// call back function for keep awake switch in settings page
 function onKeepAwakeSwitch(el) {
   if (el.checked)
     g_keep_awake = BOOL_STR.true_t;
@@ -660,6 +688,7 @@ function onKeepAwakeSwitch(el) {
   // console.log(g_keep_awake);
 }
 
+// delete the database folder
 function onCleanClick() {
   ons.notification.confirm("Delete Database?").then((index) => {
     if (index == 1) {
@@ -727,6 +756,7 @@ function onAjaxError(){
   opcStatusImgSetRed();
 }
 
+// update the component status using the data from SOAP message
 function updateComponentStatus(component_no){
   if(component_no == null){
     document.getElementById("component-status").innerHTML = "none.";
@@ -765,6 +795,7 @@ function updateComponentStatus(component_no){
   }
 }
 
+// this function call when successful connnect to the OPC Server
 // evaluates the read response sent by the OPC XML DA server
 var opc_status_counter = 0;
 var getDataFromReadResponse = function (response) {
@@ -781,7 +812,7 @@ var getDataFromReadResponse = function (response) {
   g_opc_da_data.level2Low = retItems[7].firstChild.firstChild.nodeValue;
   g_opc_da_data.level3Low = retItems[8].firstChild.firstChild.nodeValue;
   updateComponentStatus(g_current_displayed_component_no);
-  // toggle the status light
+  // toggle the status indicator
   if(opc_status_counter == 1){
     opcStatusImgSetGreen();
     opc_status_counter = 0;
