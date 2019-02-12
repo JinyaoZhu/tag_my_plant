@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CATALOG>
+
+    <COMPONENT>
+        <NO>B1</NO>
+        <NAME>Container</NAME>
+        <PICTURE>KVA-datasheets/B1/basin_B1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/B1/170707_gb.pdf</DATASHEET>
+        <CODE>73635109</CODE>
+        <DESIGN>The container is mounted on the profile plate or attached to an MPS profile using four screws and T-head nuts.</DESIGN>
+        <FUNCTION>Threaded connections are provided for inflow and outflow and for sensors with threaded connection. A hole is provided for the connection of a heating unit. Threaded holes which are not required, are to be fitted with end plugs.</FUNCTION>
+        <NOTE>Tighten the mounting screws carefully.</NOTE>
+    </COMPONENT>
+
+
+    <COMPONENT>
+        <NO>B2</NO>
+        <NAME>Container</NAME>
+        <PICTURE>KVA-datasheets/B2/basin_B2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/B2/170707_gb.pdf</DATASHEET>
+        <CODE>40061440</CODE>
+        <DESIGN>The container is mounted on the profile plate or attached to an MPS profile using four
+        screws and T-head nuts.
+        </DESIGN>
+        <FUNCTION>Threaded connections are provided for inflow and outflow and for sensors with threaded
+        connection. A hole is provided for the connection of a heating unit. Threaded holes
+        which are not required, are to be fitted with end plugs.
+        </FUNCTION>
+        <NOTE>Tighten the mounting screws carefully.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>B3</NO>
+        <NAME>Container</NAME>
+        <PICTURE>KVA-datasheets/B3/basin_B3_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/B3/170707_gb.pdf</DATASHEET>
+        <CODE>40061441</CODE>
+        <DESIGN>The container is mounted on the profile plate or attached to an MPS profile using four
+        screws and T-head nuts.
+        </DESIGN>
+        <FUNCTION>Threaded connections are provided for inflow and outflow and for sensors with threaded
+        connection. A hole is provided for the connection of a heating unit. Threaded holes
+        which are not required, are to be fitted with end plugs.
+        </FUNCTION>
+        <NOTE>Tighten the mounting screws carefully.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>F1</NO>
+        <NAME>Flowsensor</NAME>
+        <PICTURE>KVA-datasheets/F1/sensor_F1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/F1/170711_gb.pdf</DATASHEET>
+        <CODE>23425101</CODE>
+        <DESIGN>The flow sensor is built into the pipework using adapters.</DESIGN>
+        <FUNCTION>The transparent fluid admitted in the direction of the arrow is guided into a circular
+        motion via the swirl plate in the measuring chamber and directed onto the lightweight
+        triple vane rotor. The speed of the rotor is proportional to the flow rate and is detected
+        without feedback via the built-in optoelectronic infrared system (diode and phototransi-
+        stor).&lt;br&gt;
+        The integrated amplifier supplies a steady square wave signal, whereby the signal level
+        is dependent on the applied supply voltage (5 to 12 V DC).
+        Due to the particular design of the rotor, any gas bubbles (air bubbles) which may occur
+        in the fluid, are not dissolved, but carried along with the fluid.
+        Any assembly position is possible. The direction of flow is indicated by an arrow on the
+        sensor housing. Stabilizing zones up or downstream of the measuring device are not
+        necessary. &lt;br&gt;
+        Flow rate fluctuations or pulsations do not have a negative influence on the resulting
+        measurement.&lt;br&gt;
+        A protective filter is fitted on the inlet side.&lt;br&gt;
+        All parts of the measurement housing in contact with media are made of polyvinylidene
+        fluoride (PVDF).
+        </FUNCTION>
+        <NOTE>
+         During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>F2</NO>
+        <NAME>Flowsensor</NAME>
+        <PICTURE>KVA-datasheets/F2/sensor_F2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/F2/170711_gb.pdf</DATASHEET>
+        <CODE>27386356</CODE>
+        <DESIGN>The flow sensor is built into the pipework using adapters.</DESIGN>
+        <FUNCTION>The transparent fluid admitted in the direction of the arrow is guided into a circular
+        motion via the swirl plate in the measuring chamber and directed onto the lightweight
+        triple vane rotor. The speed of the rotor is proportional to the flow rate and is detected
+        without feedback via the built-in optoelectronic infrared system (diode and phototransi-
+        stor).&lt;br&gt;
+        The integrated amplifier supplies a steady square wave signal, whereby the signal level
+        is dependent on the applied supply voltage (5 to 12 V DC).
+        Due to the particular design of the rotor, any gas bubbles (air bubbles) which may occur
+        in the fluid, are not dissolved, but carried along with the fluid.
+        Any assembly position is possible. The direction of flow is indicated by an arrow on the
+        sensor housing. Stabilizing zones up or downstream of the measuring device are not
+        necessary. &lt;br&gt;
+        Flow rate fluctuations or pulsations do not have a negative influence on the resulting
+        measurement.&lt;br&gt;
+        A protective filter is fitted on the inlet side.&lt;br&gt;
+        All parts of the measurement housing in contact with media are made of polyvinylidene
+        fluoride (PVDF).
+        </FUNCTION>
+        <NOTE>
+         During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LH1</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LH1/sensor_LH1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LH1/258172_gb.pdf</DATASHEET>
+        <CODE>87363500</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LH2</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LH2/sensor_LH2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LH2/258172_gb.pdf</DATASHEET>
+        <CODE>47362505</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LH3</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LH3/sensor_LH3_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LH3/258172_gb.pdf</DATASHEET>
+        <CODE>47583764</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LL1</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LL1/sensor_LL1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LL1/258172_gb.pdf</DATASHEET>
+        <CODE>67352609</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LL2</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LL2/sensor_LL2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LL2/258172_gb.pdf</DATASHEET>
+        <CODE>67251209</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>LL3</NO>
+        <NAME>Capacitive proximity sensor</NAME>
+        <PICTURE>KVA-datasheets/LL3/sensor_LL3_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/LL3/258172_gb.pdf</DATASHEET>
+        <CODE>74873652</CODE>
+        <DESIGN>
+          The capacitive proximity sensor can be attached via an angle bracket and two lock
+          nuts. The sensor is of cylindrical design with an M18x1 thread.
+        </DESIGN>
+        <FUNCTION>
+        The operational principle of a capacitive proximity sensor is based on the evaluation of
+        the change in capacitance of a capacitor in an RC resonant circuit. The capacitance
+        increases, when an object approaches the proximity sensor. This leads to a change in
+        the oscillating action of the RC circuit which can be evaluated. The change in capaci-
+        tance largely depends on the distance, the dimensions and the dielectric constant of the
+        respective material. &lt;br&gt;
+        The proximity sensor has a PNP output, i.e. the signal line is switched to positive poten-
+        tial in the switched status. The switch is designed in the form of a normally open con-
+        tact. The load is connected between the sensor signal output and earth. A yellow light
+        emitting diode (LED) indicates the switching status. The capacitive proximity sensor
+        cannot be flush fitted. &lt;br&gt;
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>P1</NO>
+        <NAME>Pump</NAME>
+        <PICTURE>KVA-datasheets/P1/actuator_P1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/P1/170712_gb.pdf</DATASHEET>
+        <CODE>23421202</CODE>
+        <DESIGN>
+        The pump is attached via a ring clamp, which is mounted on the profile plate by means
+        of two screws and T-head nuts.
+        </DESIGN>
+        <FUNCTION>
+        The centrifugal pump is suitable for the recirculation of cooling water or water in heating
+        systems. The pump is not self-priming. The motor is suitable for continuous operation.
+        Pump rotation is clockwise (see arrow on pump housing).The pump can be mounted
+        horizontally or vertically. If mounted vertically, the motor must be mounted above the
+        pump body. If it is mounted horizontally, the output of the pump must point upwards.
+        The pump must be mounted so that it is flooded.
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>P2</NO>
+        <NAME>Pump</NAME>
+        <PICTURE>KVA-datasheets/P2/actuator_P2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/P2/170712_gb.pdf</DATASHEET>
+        <CODE>27486753</CODE>
+        <DESIGN>
+        The pump is attached via a ring clamp, which is mounted on the profile plate by means
+        of two screws and T-head nuts.
+        </DESIGN>
+        <FUNCTION>
+        The centrifugal pump is suitable for the recirculation of cooling water or water in heating
+        systems. The pump is not self-priming. The motor is suitable for continuous operation.
+        Pump rotation is clockwise (see arrow on pump housing).The pump can be mounted
+        horizontally or vertically. If mounted vertically, the motor must be mounted above the
+        pump body. If it is mounted horizontally, the output of the pump must point upwards.
+        The pump must be mounted so that it is flooded.
+        </FUNCTION>
+        <NOTE>
+        During operation, please observe the polarity of the applied voltage. The terminals are
+        colour coded.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>T</NO>
+        <NAME>Temperature sensor</NAME>
+        <PICTURE>KVA-datasheets/T/sensor_T_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/T/170709_gb.pdf</DATASHEET>
+        <CODE>63726387</CODE>
+        <DESIGN>
+    The temperature sensor is screwed into a threaded hole in the container.
+        </DESIGN>
+        <FUNCTION>
+    The temperature sensor contains a platinum resistance thermometer with interchange-
+    able measuring element.&lt;br&gt;
+    The sensor consists of a shield tube, a connection head and the measuring element.
+    During installation, ensure as accurately as possible that the sensor accepts the tempe-
+    rature to be measured. Heat absorbed or given out by the sensor is to be avoided.&lt;br&gt;
+    Resistance default value of platinum resistance thermometer Pt 100 - as a function of
+    temperature: see datasheet.
+        </FUNCTION>
+        <NOTE>
+    The permissible flow velocity for water is 3 m/s.
+        </NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>V1</NO>
+        <NAME>Proportional valve</NAME>
+        <PICTURE>KVA-datasheets/V1/actuator_V1_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/V1/170714_gb.pdf</DATASHEET>
+        <CODE>63762105</CODE>
+        <DESIGN>The proportional valve is mounted on an angle bracket and can be attached
+        to an MPS profile plate using a screw and T-head nut.
+        </DESIGN>
+        <FUNCTION>The proportional valve facilitates flow control of neutral gases and fluids. 
+    It can be used as a remote controllable final control element or in closed control loops.
+    The proportional valve is a directly actuated 2/2-way valve.
+    The valve piston is lifted of its seat as a function of the solenoid coil current and releases the flow from connection 
+    1 to connection 2. Once the valve is de-energised, it is closed via a reset spring.
+        </FUNCTION>
+        <NOTE></NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>V2</NO>
+        <NAME>Proportional valve</NAME>
+        <PICTURE>KVA-datasheets/V2/actuator_V2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/V2/170714_gb.pdf</DATASHEET>
+        <CODE>87639752</CODE>
+        <DESIGN>The proportional valve is mounted on an angle bracket and can be attached
+        to an MPS profile plate using a screw and T-head nut.
+        </DESIGN>
+        <FUNCTION>The proportional valve facilitates flow control of neutral gases and fluids. 
+    It can be used as a remote controllable final control element or in closed control loops.
+    The proportional valve is a directly actuated 2/2-way valve.
+    The valve piston is lifted of its seat as a function of the solenoid coil current and releases the flow from connection 
+    1 to connection 2. Once the valve is de-energised, it is closed via a reset spring.
+        </FUNCTION>
+        <NOTE></NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>Y2</NO>
+        <NAME>2/2-way solenoid valve</NAME>
+        <PICTURE>KVA-datasheets/Y2/actuator_Y2_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/Y2/170715_gb.pdf</DATASHEET>
+        <CODE>88976537</CODE>
+        <DESIGN>The 2/2-way solenoid valve is installed in the piping by means of quick push-pull connectors.</DESIGN>
+        <FUNCTION>The 2/2-way solenoid valve is a directly actuated valve. When the coil is de-energised, the valve is closed by means of spring force.</FUNCTION>
+        <NOTE>For a firm attachment, a pipe clamp may be fitted in front and behind the valve.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>Y3</NO>
+        <NAME>2/2-way solenoid valve</NAME>
+        <PICTURE>KVA-datasheets/Y3/actuator_Y3_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/Y3/170715_gb.pdf</DATASHEET>
+        <CODE>87647397</CODE>
+        <DESIGN>The 2/2-way solenoid valve is installed in the piping by means of quick push-pull connectors.</DESIGN>
+        <FUNCTION>The 2/2-way solenoid valve is a directly actuated valve. When the coil is de-energised, the valve is closed by means of spring force.</FUNCTION>
+        <NOTE>For a firm attachment, a pipe clamp may be fitted in front and behind the valve.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>Y4</NO>
+        <NAME>2/2-way solenoid valve</NAME>
+        <PICTURE>KVA-datasheets/Y4/actuator_Y4_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/Y4/170715_gb.pdf</DATASHEET>
+        <CODE>87637492</CODE>
+        <DESIGN>The 2/2-way solenoid valve is installed in the piping by means of quick push-pull connectors.</DESIGN>
+        <FUNCTION>The 2/2-way solenoid valve is a directly actuated valve. When the coil is de-energised, the valve is closed by means of spring force.</FUNCTION>
+        <NOTE>For a firm attachment, a pipe clamp may be fitted in front and behind the valve.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>Y5</NO>
+        <NAME>2/2-way solenoid valve</NAME>
+        <PICTURE>KVA-datasheets/Y5/actuator_Y5_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/Y5/170715_gb.pdf</DATASHEET>
+        <CODE>33874622</CODE>
+        <DESIGN>The 2/2-way solenoid valve is installed in the piping by means of quick push-pull connectors.</DESIGN>
+        <FUNCTION>The 2/2-way solenoid valve is a directly actuated valve. When the coil is de-energised, the valve is closed by means of spring force.</FUNCTION>
+        <NOTE>For a firm attachment, a pipe clamp may be fitted in front and behind the valve.</NOTE>
+    </COMPONENT>
+
+    <COMPONENT>
+        <NO>Y6</NO>
+        <NAME>2/2-way solenoid valve</NAME>
+        <PICTURE>KVA-datasheets/Y6/actuator_Y6_pic.PNG</PICTURE>
+        <DATASHEET>KVA-datasheets/Y6/170715_gb.pdf</DATASHEET>
+        <CODE>98767483</CODE>
+        <DESIGN>The 2/2-way solenoid valve is installed in the piping by means of quick push-pull connectors.</DESIGN>
+        <FUNCTION>The 2/2-way solenoid valve is a directly actuated valve. When the coil is de-energised, the valve is closed by means of spring force.</FUNCTION>
+        <NOTE>For a firm attachment, a pipe clamp may be fitted in front and behind the valve.</NOTE>
+    </COMPONENT>
+</CATALOG>
